@@ -10,12 +10,10 @@
 #define PUBKEY "rsa_public_key.pem"
 #define BUFFSIZE 4096
 
-#ifdef _WIN32
 extern "C"
 {
-#include <openssl/applink.c>
+//#include <openssl/applink.c>
 }
-#endif
 
 char *my_encrypt(char *str, char *pubkey_path)
 {

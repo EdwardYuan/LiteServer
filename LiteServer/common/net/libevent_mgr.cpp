@@ -158,7 +158,7 @@ static void listener_cb(struct evconnlistener *listener, evutil_socket_t fd, str
 	}
 
 	NetObj * obj = info->pNetObjFactory->NewNetObj();
-	obj->SetIP(addr->sin_addr.S_un.S_addr);
+	//obj->SetIP(addr->sin_addr.S_un.S_addr);
 	obj->SetSockID(fd);
 	obj->SetListenerID(info->iListenerID);
 	obj->SetBufferEvent(bev);
@@ -284,7 +284,7 @@ bool LibEventMgr::Connect(const char *ip, uint16 port, NetObj *pNetObj, IMsgRecv
 
 	struct sockaddr *addr = (struct sockaddr *)&serverAddr;
 
-	pNetObj->SetIP(serverAddr.sin_addr.S_un.S_addr);
+	//pNetObj->SetIP(serverAddr.sin_addr.S_un.S_addr);
 	pNetObj->SetSockID(sockfd);
 	pNetObj->SetListenerID(-1);
 	pNetObj->SetBufferEvent(bev);

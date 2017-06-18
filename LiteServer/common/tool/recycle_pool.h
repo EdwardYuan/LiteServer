@@ -20,7 +20,7 @@ public:
 
 	virtual ~TRecyclePool()
 	{
-		std::list<EntityClass*>::iterator it = m_listEntity.begin();
+		typename std::list<EntityClass*>::iterator it = m_listEntity.begin();
 		for (; it != m_listEntity.end(); ++it)
 		{
 			SAFE_RELEASE(*it);

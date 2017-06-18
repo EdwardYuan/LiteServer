@@ -1,14 +1,14 @@
 #include "commonlib.h"
 #include "msgdefine.h"
 
-#pragma comment(lib,"common.lib")
-#pragma comment(lib,"msgdefine.lib")
 
-#pragma comment(lib,"libevent_core.lib")
-#pragma comment(lib,"libprotobuf.lib")
-#pragma comment(lib,"lua53.lib")
 #ifdef _WIN32
-#pragma comment(lib,"Ws2_32.lib")
+	#pragma comment(lib,"Ws2_32.lib")
+	#pragma comment(lib,"common.lib")
+	#pragma comment(lib,"msgdefine.lib")
+	#pragma comment(lib,"libevent_core.lib")
+	#pragma comment(lib,"libprotobuf.lib")
+	#pragma comment(lib,"lua53.lib")
 #endif
 
 #include "gateway_net_mgr.h"

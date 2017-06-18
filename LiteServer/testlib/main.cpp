@@ -11,18 +11,17 @@
 
 
 
-#pragma comment(lib,"common.lib")
-#pragma comment(lib,"msgdefine.lib")
 
-
-#pragma comment(lib,"libevent_core.lib")
-#pragma comment(lib,"libprotobuf.lib")
-#pragma comment(lib,"lua53.lib")
-#pragma comment(lib, "libeay32.lib")
-#pragma comment(lib, "ssleay32.lib")
-#pragma comment(lib, "mysqlpp_d.lib")
 #ifdef _WIN32
-#pragma comment(lib,"Ws2_32.lib")
+	#pragma comment(lib,"Ws2_32.lib")
+	#pragma comment(lib,"common.lib")
+	#pragma comment(lib,"msgdefine.lib")
+	#pragma comment(lib,"libevent_core.lib")
+	#pragma comment(lib,"libprotobuf.lib")
+	#pragma comment(lib,"lua53.lib")
+	#pragma comment(lib, "libeay32.lib")
+	#pragma comment(lib, "ssleay32.lib")
+	#pragma comment(lib, "mysqlpp_d.lib")
 #endif
 
 

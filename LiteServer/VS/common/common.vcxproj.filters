@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{29b3d75e-ab6c-4560-9faa-2fb230e3ff37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework">
+      <UniqueIdentifier>{643cb7de-914e-478f-9530-204d6f4999d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{0f0b9f22-4175-43a2-9787-258c3a549d23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{60d0fc04-3285-42a4-a922-0c8bd94a4e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{dba46a6a-3311-46fa-9976-48eb9cc92870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{33f9c643-3eee-42a6-ae4d-2efeb794b270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tool">
+      <UniqueIdentifier>{1d21769a-dd22-4fe8-b75f-c7b130c29a5a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\base\none_copy_class.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\base\type_def.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\framework\application.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\json\json_tool.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\lua\lua_mgr.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\lua\lua_param.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\net\libevent_mgr.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\net\msg_package.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\net\net_listener.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\net\net_obj.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\net\protobuf_pkg.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\tool\aes.h">
+      <Filter>tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\tool\id_factory.h">
+      <Filter>tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\tool\log_mgr.h">
+      <Filter>tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\tool\macro_tool.h">
+      <Filter>tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\tool\recycle_pool.h">
+      <Filter>tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\tool\template_object_pool.h">
+      <Filter>tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\timer\global_timer_mgr.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\timer\q_timer.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\commonlib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\json\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\lua\lua_mgr.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\net\libevent_mgr.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\net\net_listener.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\net\net_obj.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\tool\aes.cpp">
+      <Filter>tool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\tool\log_mgr.cpp">
+      <Filter>tool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\timer\global_timer_mgr.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\timer\q_timer.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\common\json\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\gateway\gateway_net.cpp" />
+    <ClCompile Include="..\..\gateway\gateway_net_mgr.cpp" />
+    <ClCompile Include="..\..\gateway\gateway_server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\gateway\gateway_net.h" />
+    <ClInclude Include="..\..\gateway\gateway_net_mgr.h" />
+  </ItemGroup>
+</Project>

@@ -8,6 +8,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 clear_all_list()
 
 add_include_path( ../../include )
+add_include_path( ../../include/windows )
 add_source_files( ../../common/*.* )
 
 

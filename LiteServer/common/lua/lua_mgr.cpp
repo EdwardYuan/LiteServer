@@ -62,7 +62,7 @@ bool LuaMgr::LoadFile(const char* szFileName)
 	}
 
 	const char* pszErrInfor = lua_tostring(m_pLuaState, -1);
-	LOG_ERROR("Lua加载文件‘%s’失败，原因：%s", szFileName, pszErrInfor);
+	LOG_ERROR("Lua加载文件{0}失败，原因：{1}", szFileName, pszErrInfor);
 	lua_settop(m_pLuaState, top);
 	return false;
 }
@@ -87,7 +87,7 @@ bool LuaMgr::RunMemory(const char* pLuaData, int nDataLen)
 	}
 
 	const char* pszErrInfor = lua_tostring(m_pLuaState, -1);
-	LOG_ERROR("Lua执行内存lua失败，原因：%s", pszErrInfor);
+	LOG_ERROR("Lua执行内存lua失败，原因：{0}", pszErrInfor);
 	lua_settop(m_pLuaState, top);
 	return false;
 }
@@ -100,7 +100,7 @@ bool LuaMgr::RunFunction(const char* szFunName, LuaParam* pInParam, int nInNum, 
 		lua_getglobal(m_pLuaState, szFunName);
 		if (!lua_isfunction(m_pLuaState, -1))
 		{
-			LOG_ERROR("Lua调用函数‘%s’失败, 找不到该函数", szFunName);
+			LOG_ERROR("Lua调用函数{0}失败, 找不到该函数", szFunName);
 			lua_settop(m_pLuaState, top);
 			return false;
 		}
@@ -132,7 +132,7 @@ bool LuaMgr::RunFunction(const char* szFunName, LuaParam* pInParam, int nInNum, 
 				break;
 			default:
 			{
-				LOG_ERROR("Lua调用函数‘%s’失败，输入参数[%d]类型错误", szFunName, i);
+				LOG_ERROR("Lua调用函数{0}失败，输入参数{1}类型错误", szFunName, i);
 				lua_settop(m_pLuaState, top);
 				return false;
 			}
@@ -175,7 +175,7 @@ bool LuaMgr::RunFunction(const char* szFunName, LuaParam* pInParam, int nInNum, 
 					break;
 				default:
 				{
-					LOG_ERROR("Lua调用函数‘%s’失败，输出参数[%d]类型错误", szFunName, n);
+					LOG_ERROR("Lua调用函数{0}失败，输出参数{1}类型错误", szFunName, n);
 					lua_settop(m_pLuaState, top);
 					return false;
 				}
@@ -193,7 +193,7 @@ bool LuaMgr::RunFunction(const char* szFunName, LuaParam* pInParam, int nInNum, 
 	}
 
 	const char* pszErrInfor = lua_tostring(m_pLuaState, -1);
-	LOG_ERROR("Lua调用函数‘%s’失败，原因：%s", szFunName, pszErrInfor);
+	LOG_ERROR("Lua调用函数{0}失败，原因：{1}", szFunName, pszErrInfor);
 	lua_settop(m_pLuaState, top);
 	return false;
 }
